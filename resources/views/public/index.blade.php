@@ -19,35 +19,40 @@
 
                     <div class="collapse navbar-collapse">
                         <!-- menus -->
-                        <ul class="mr-auto navbar-nav">
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="index.html">Home</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Magazine</a></li>
-                                    <li><a class="dropdown-item" href="personal.html">Personal</a></li>
-                                    <li><a class="dropdown-item" href="personal-alt.html">Personal Alt</a></li>
-                                    <li><a class="dropdown-item" href="minimal.html">Minimal</a></li>
-                                    <li><a class="dropdown-item" href="classic.html">Classic</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Lifestyle</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="category.html">Inspiration</a>
+                        <ul class="mr-1 navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{url("/")}}l">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#">Pages</a>
+                                <a class="nav-link dropdown-toggle" href="#">Profil</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="category.html">Category</a></li>
-                                    <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                                    <li><a class="dropdown-item" href="blog-single-alt.html">Blog Single Alt</a></li>
-                                    <li><a class="dropdown-item" href="about.html">About</a></li>
-                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                    <li><a class="dropdown-item" href="category.html">Struktur Organisasi</a></li>
+                                    <li><a class="dropdown-item" href="blog-single.html">Visi dan Misi</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#">Data Penduduk</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="category.html">Kepala Keluarga</a></li>
+                                    <li><a class="dropdown-item" href="blog-single.html">Data Jenis Kelamin</a></li>
+                                    <li><a class="dropdown-item" href="blog-single-alt.html">Kelompok Usia</a></li>
+                                    <li><a class="dropdown-item" href="category.html">Agama</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Vaksin</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#">Info</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="category.html">Agenda RW</a></li>
+                                    <li><a class="dropdown-item" href="blog-single.html">Agenda RT</a></li>
+                                    <li><a class="dropdown-item" href="blog-single-alt.html">Berita</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="{{ route('about') }}">Tentang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Layanan</a>
                             </li>
                         </ul>
                     </div>
@@ -59,8 +64,6 @@
                             <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
                             <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                         <!-- header buttons -->
@@ -89,12 +92,11 @@
                         <!-- featured post large -->
                         <div class="post featured-post-lg">
                             <div class="clearfix details">
-                                <a href="category.html" class="category-badge">Inspiration</a>
-                                <h2 class="post-title"><a href="blog-single.html">5 Easy Ways You Can Turn Future Into
-                                        Success</a></h2>
+                                <a href="category.html" class="category-badge">Pendidikan</a>
+                                <h2 class="post-title"><a href="blog-single.html">Prodi Rekayasa Perangkat Lunak UPI Kampus Cibiru Bekerja Sama dengan RW 13</a></h2>
                                 <ul class="mb-0 meta list-inline">
-                                    <li class="list-inline-item"><a href="#">Katen Doe</a></li>
-                                    <li class="list-inline-item">29 March 2021</li>
+                                    <li class="list-inline-item"><a href="#">Admin</a></li>
+                                    <li class="list-inline-item">5 Juni 2022</li>
                                 </ul>
                             </div>
                             <a href="blog-single.html">
@@ -116,10 +118,7 @@
                             <ul class="nav nav-tabs nav-pills nav-fill" id="postsTab" role="tablist">
                                 <li class="nav-item" role="presentation"><button aria-controls="popular"
                                         aria-selected="true" class="nav-link active" data-bs-target="#popular"
-                                        data-bs-toggle="tab" id="popular-tab" role="tab" type="button">Popular</button></li>
-                                <li class="nav-item" role="presentation"><button aria-controls="recent"
-                                        aria-selected="false" class="nav-link" data-bs-target="#recent"
-                                        data-bs-toggle="tab" id="recent-tab" role="tab" type="button">Recent</button></li>
+                                        data-bs-toggle="tab" id="popular-tab" role="tab" type="button">Artikel Popular</button></li>
                             </ul>
                             <!-- tab contents -->
                             <div class="tab-content" id="postsTabContent">
@@ -139,10 +138,10 @@
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">3 Easy Ways To Make Your
-                                                    iPhone Faster</a></h6>
+                                            <h6 class="my-0 post-title"><a href="blog-single.html">Agenda Rapat Rutin Dengan Karang Taruna</a></h6>
+                                            <ul class="mt-1 mb-0 meta list-inline"></a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
+                                                <li class="list-inline-item">6 Juni 2022</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -151,15 +150,14 @@
                                         <div class="thumb circle">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/tabs-2.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">An Incredibly Easy Method
-                                                    That Works For All</a></h6>
+                                            <h6 class="my-0 post-title"><a href="blog-single.html">Selamat Hari Lahir Pancasila</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
+                                                <li class="list-inline-item">1 Juni 2022</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -168,15 +166,14 @@
                                         <div class="thumb circle">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/tabs-3.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">10 Ways To Immediately
-                                                    Start Selling Furniture</a></h6>
+                                            <h6 class="my-0 post-title"><a href="blog-single.html">Agenda Gotong Royong Sesama Warga</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
+                                                <li class="list-inline-item">29 April 2021</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -185,84 +182,12 @@
                                         <div class="thumb circle">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/tabs-4.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">15 Unheard Ways To
-                                                    Achieve Greater Walker</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- recent posts -->
-                                <div aria-labelledby="recent-tab" class="tab-pane fade" id="recent" role="tabpanel">
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/tabs-2.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">An Incredibly Easy
-                                                    Method That Works For All</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/tabs-1.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">3 Easy Ways To Make Your
-                                                    iPhone Faster</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/tabs-4.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">15 Unheard Ways To
-                                                    Achieve Greater Walker</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/tabs-3.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">10 Ways To Immediately
-                                                    Start Selling Furniture</a></h6>
+                                            <h6 class="my-0 post-title"><a href="blog-single.html">Inovasi Pelayanan Informasi Publik RW 13 Desa Cibiru Wetan</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
                                                 <li class="list-inline-item">29 March 2021</li>
                                             </ul>
@@ -289,8 +214,8 @@
 
                         <!-- section header -->
                         <div class="section-header">
-                            <h3 class="section-title">Editor’s Pick</h3>
-                            <img src="images/wave.svg" class="wave" alt="wave" />
+                            <h3 class="section-title">Berita</h3>
+                            <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                         </div>
 
                         <div class="rounded padding-30 bordered">
@@ -305,13 +230,13 @@
                                             </span>
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/editor-lg.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="mt-4 mb-0 meta list-inline">
-                                            <li class="list-inline-item"><a href="#"><img src="images/other/author-sm.png"
-                                                        class="author" alt="author" />Katen Doe</a></li>
+                                            <li class="list-inline-item"><a href="#"><img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}"
+                                                        class="author" alt="author" />Admin</a></li>
                                             <li class="list-inline-item">29 March 2021</li>
                                         </ul>
                                         <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">15 Unheard Ways To
@@ -326,7 +251,7 @@
                                         <div class="rounded thumb">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/editor-sm-1.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -343,7 +268,7 @@
                                         <div class="rounded thumb">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/editor-sm-2.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -360,7 +285,7 @@
                                         <div class="rounded thumb">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/editor-sm-3.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -377,7 +302,7 @@
                                         <div class="rounded thumb">
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/editor-sm-4.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -399,7 +324,7 @@
                         <div class="ads-horizontal text-md-center">
                             <span class="ads-title">- Sponsored Ad -</span>
                             <a href="#">
-                                <img src="images/ads/ad-750.png" alt="Advertisement" />
+                                <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }} alt="Advertisement" />
                             </a>
                         </div>
 
@@ -407,130 +332,24 @@
 
                         <!-- section header -->
                         <div class="section-header">
-                            <h3 class="section-title">Trending</h3>
-                            <img src="images/wave.svg" class="wave" alt="wave" />
+                            <h3 class="section-title">Visi dan Misi</h3>
+                            <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                         </div>
 
                         <div class="rounded padding-30 bordered">
                             <div class="row gy-5">
-                                <div class="col-sm-6">
+                                <div class="col-sm-12">
                                     <!-- post large -->
                                     <div class="post">
-                                        <div class="rounded thumb">
-                                            <a href="category.html" class="category-badge position-absolute">Culture</a>
-                                            <span class="post-format">
-                                                <i class="icon-picture"></i>
-                                            </span>
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/trending-lg-1.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="mt-4 mb-0 meta list-inline">
-                                            <li class="list-inline-item"><a href="#"><img src="images/other/author-sm.png"
-                                                        class="author" alt="author" />Katen Doe</a></li>
-                                            <li class="list-inline-item">29 March 2021</li>
-                                        </ul>
-                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">Facts About Business
-                                                That Will Help You Success</a></h5>
+                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">VISI</a></h5>
                                         <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
                                             soul, like these sweet mornings of spring which I enjoy</p>
                                     </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm square before-seperator">
-                                        <div class="rounded thumb">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/trending-sm-1.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">3 Easy Ways To Make Your
-                                                    iPhone Faster</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm square before-seperator">
-                                        <div class="rounded thumb">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/trending-sm-2.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">An Incredibly Easy
-                                                    Method That Works For All</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
                                     <!-- post large -->
                                     <div class="post">
-                                        <div class="rounded thumb">
-                                            <a href="category.html"
-                                                class="category-badge position-absolute">Inspiration</a>
-                                            <span class="post-format">
-                                                <i class="icon-earphones"></i>
-                                            </span>
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="{{ asset('assets/katen/image/IMG_20220513_130559.jpg') }}"
-                                                        alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="mt-4 mb-0 meta list-inline">
-                                            <li class="list-inline-item"><a href="#"><img src="images/other/author-sm.png"
-                                                        class="author" alt="author" />Katen Doe</a></li>
-                                            <li class="list-inline-item">29 March 2021</li>
-                                        </ul>
-                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">5 Easy Ways You Can
-                                                Turn Future Into Success</a></h5>
+                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">MISI</a></h5>
                                         <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
                                             soul, like these sweet mornings of spring which I enjoy</p>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm square before-seperator">
-                                        <div class="rounded thumb">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/trending-sm-3.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">Here Are 8 Ways To
-                                                    Success Faster</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm square before-seperator">
-                                        <div class="rounded thumb">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/trending-sm-4.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">Master The Art Of Nature
-                                                    With These 7 Tips</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -541,7 +360,7 @@
                         <!-- section header -->
                         <div class="section-header">
                             <h3 class="section-title">Inspiration</h3>
-                            <img src="images/wave.svg" class="wave" alt="wave" />
+                            <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                             <div class="slick-arrows-top">
                                 <button type="button" data-role="none" class="carousel-topNav-prev slick-custom-buttons"
                                     aria-label="Previous"><i class="icon-arrow-left"></i></button>
@@ -565,7 +384,7 @@
                                 <a href="blog-single.html">
                                     <div class="rounded thumb">
                                         <div class="inner">
-                                            <img src="images/posts/inspiration-1.jpg" alt="thumb" />
+                                            <img src="{{ asset('assets/katen/images/posts/inspiration-1.jpg') }} " alt="thumb" />
                                         </div>
                                     </div>
                                 </a>
@@ -584,7 +403,7 @@
                                 <a href="blog-single.html">
                                     <div class="rounded thumb">
                                         <div class="inner">
-                                            <img src="images/posts/inspiration-2.jpg" alt="thumb" />
+                                            <img src="{{ asset('assets/katen/images/posts/inspiration-1.jpg') }}" alt="thumb" />
                                         </div>
                                     </div>
                                 </a>
@@ -856,7 +675,7 @@
                             <div class="rounded widget">
                                 <div class="text-center widget-header">
                                     <h3 class="widget-title">Popular Posts</h3>
-                                    <img src="images/wave.svg" class="wave" alt="wave" />
+                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" class="wave" alt="wave" />
                                 </div>
                                 <div class="widget-content">
                                     <!-- post -->
@@ -865,7 +684,7 @@
                                             <span class="number">1</span>
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/tabs-1.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -883,7 +702,7 @@
                                             <span class="number">2</span>
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/tabs-2.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -901,7 +720,7 @@
                                             <span class="number">3</span>
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="images/posts/tabs-3.jpg" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -1148,39 +967,46 @@
         <!-- menu -->
         <nav>
             <ul class="vertical-menu">
-                <li class="active">
-                    <a href="index.html">Home</a>
+                <li class="active"><a href="{{url("/")}}l">Home</a></li>
+                <li >
+                    <a href="#">Profil</a>
                     <ul class="submenu">
-                        <li><a href="index.html">Magazine</a></li>
-                        <li><a href="personal.html">Personal</a></li>
-                        <li><a href="personal-alt.html">Personal Alt</a></li>
-                        <li><a href="minimal.html">Minimal</a></li>
-                        <li><a href="classic.html">Classic</a></li>
+                        <li><a href="category.html">Struktur Organisasi</a></li>
+                        <li><a href="blog-single.html">Visi dan Misi</a></li>
                     </ul>
                 </li>
-                <li><a href="category.html">Lifestyle</a></li>
-                <li><a href="category.html">Inspiration</a></li>
                 <li>
-                    <a href="#">Pages</a>
+                    <a href="#">Data Penduduk</a>
                     <ul class="submenu">
-                        <li><a href="category.html">Category</a></li>
-                        <li><a href="blog-single.html">Blog Single</a></li>
-                        <li><a href="blog-single-alt.html">Blog Single Alt</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="category.html">Kepala Keluarga</a></li>
+                        <li><a href="blog-single.html">Data Jenis Kelamin</a></li>
+                        <li><a href="blog-single-alt.html">Kelompok Usia</a></li>
+                        <li><a href="category.html">Agama</a></li>
+                        <li><a href="contact.html">Vaksin</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#">Info</a>
+                    <ul class="submenu">
+                        <li><a href="category.html">Agenda RW</a></li>
+                        <li><a href="blog-single.html">Agenda RT</a></li>
+                        <li><a href="blog-single-alt.html">Berita</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{{ route('about') }}">Tentang</a>
+                </li>
+                <li>
+                    <a href="contact.html">Layanan</a>
+                </li>
             </ul>
         </nav>
-
+       
         <!-- social icons -->
         <ul class="mt-auto mb-0 social-icons list-unstyled list-inline w-100">
             <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
             <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
         </ul>
     </div>

@@ -16,15 +16,8 @@
 				<div class="collapse navbar-collapse">
 					<!-- menus -->
 					<ul class="mr-auto navbar-nav">
-						<li class="nav-item dropdown active">
-							<a class="nav-link dropdown-toggle" href="index.html">Home</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="index.html">Magazine</a></li>
-								<li><a class="dropdown-item" href="personal.html">Personal</a></li>
-								<li><a class="dropdown-item" href="personal-alt.html">Personal Alt</a></li>
-								<li><a class="dropdown-item" href="minimal.html">Minimal</a></li>
-								<li><a class="dropdown-item" href="classic.html">Classic</a></li>
-							</ul>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="{{url("/")}}">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="category.html">Lifestyle</a>
@@ -32,8 +25,8 @@
 						<li class="nav-item">
 							<a class="nav-link" href="category.html">Inspiration</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#">Pages</a>
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle " href="#">Pages</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="category.html">Category</a></li>
 								<li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>

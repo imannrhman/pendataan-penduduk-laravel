@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('nik')->unique('nik');
             $table->string('full_name');
             $table->date('date_of_birth')->nullable();
-            $table->char('gender',1)->nullable();
-            $table->string('blood_type',2)->nullable();
-            $table->foreignId('birthplace_id')->nullable()->constrained('birthplace')->nullOnDelete();
+            $table->char('gender', 1)->nullable();
+            $table->string('blood_type', 2)->nullable();
+            $table->foreignId('birthplace_id')->nullable()->constrained('birthplaces')->nullOnDelete();
             $table->foreignId('religion_id')->nullable()->constrained('religions')->nullOnDelete();
             $table->foreignId('education_id')->nullable()->constrained('education')->nullOnDelete();
             $table->foreignId('profession_id')->nullable()->constrained('professions')->nullOnDelete();
@@ -31,7 +31,7 @@ return new class extends Migration
             $table->string('no_kitap')->nullable();
             $table->string('father_name')->nullable();
             $table->string('mother_name')->nullable();
-            $table->char('citizenship',3)->nullable();
+            $table->char('citizenship', 3)->nullable();
             $table->timestamps();
         });
     }
