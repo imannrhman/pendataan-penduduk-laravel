@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,16 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('public.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
+Route::get('/about', function () {
+    return view('public.about');
+});
 
 
-Route::get('/keluarga', function () {
-    return view('pages.citizen.family_data');
-})->middleware(['auth'])->name('keluarga');
 
-require __DIR__.'/auth.php';

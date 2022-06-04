@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('rt', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('no_rt');
+            $table->integer('no_rt')->unique();
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rts');
+        Schema::dropIfExists('rt');
     }
 };

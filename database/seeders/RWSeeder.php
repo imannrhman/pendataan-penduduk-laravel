@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class RWSeeder extends Seeder
 {
@@ -14,6 +15,12 @@ class RWSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $rw = [
+            "no_rw" => 13,
+            'created_at' => new \DateTime,
+            'updated_at' => null,
+        ];
+
+        DB::table('rw')->insert($rw);
     }
 }

@@ -17,12 +17,22 @@ class MaritalStatusSeeder extends Seeder
     {
         $maritalStatus = [
             [
-                'status' => 'Menikah',
+                'status' => 'BELUM KAWIN',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'status' => 'Belum',
+                'status' => 'KAWIN TERCATAT',
+                'created_at' => new \DateTime,
+                'updated_at' => null,
+            ],
+            [
+                'status' => 'CERAI HIDUP',
+                'created_at' => new \DateTime,
+                'updated_at' => null,
+            ],
+            [
+                'status' => 'CERAI MATI',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
