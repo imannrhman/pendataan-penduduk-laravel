@@ -22,3 +22,12 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('public.about');
 })->name('about');
+
+
+Route::get('/profile', function () {
+    return view('public.profile');
+})->name('profile');
+
+Route::get('/coba-coba', function () {
+    return view('public.test');
+})->name('ujang');

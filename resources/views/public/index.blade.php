@@ -21,10 +21,10 @@
                         <!-- menus -->
                         <ul class="mr-1 navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{{url("/")}}l">Home</a>
+                                <a class="nav-link" href="{{url("/")}}">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#">Profil</a>
+                                <a class="nav-link dropdown-toggle" href="{{ url('/profile') }}">Profil</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="category.html">Struktur Organisasi</a></li>
                                     <li><a class="dropdown-item" href="blog-single.html">Visi dan Misi</a></li>
@@ -37,7 +37,6 @@
                                     <li><a class="dropdown-item" href="blog-single.html">Data Jenis Kelamin</a></li>
                                     <li><a class="dropdown-item" href="blog-single-alt.html">Kelompok Usia</a></li>
                                     <li><a class="dropdown-item" href="category.html">Agama</a></li>
-                                    <li><a class="dropdown-item" href="contact.html">Vaksin</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -82,12 +81,14 @@
 
         <!-- hero section -->
         <section id="hero">
-
+            <div class="text-center">
+                <h3 class="m-0">Layanan Online RW 13 </h3> 
+                <p>Desa Cibiru Wetan Kecataman Cileunyi Kabupaten Bandung</p>
+            </div>
             <div class="container-xl">
-
                 <div class="row gy-4">
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
 
                         <!-- featured post large -->
                         <div class="post featured-post-lg">
@@ -107,97 +108,7 @@
                                 </div>
                             </a>
                         </div>
-
                     </div>
-
-                    <div class="col-lg-4">
-
-                        <!-- post tabs -->
-                        <div class="rounded post-tabs bordered">
-                            <!-- tab navs -->
-                            <ul class="nav nav-tabs nav-pills nav-fill" id="postsTab" role="tablist">
-                                <li class="nav-item" role="presentation"><button aria-controls="popular"
-                                        aria-selected="true" class="nav-link active" data-bs-target="#popular"
-                                        data-bs-toggle="tab" id="popular-tab" role="tab" type="button">Artikel Popular</button></li>
-                            </ul>
-                            <!-- tab contents -->
-                            <div class="tab-content" id="postsTabContent">
-                                <!-- loader -->
-                                <div class="lds-dual-ring"></div>
-                                <!-- popular posts -->
-                                <div aria-labelledby="popular-tab" class="tab-pane fade show active" id="popular"
-                                    role="tabpanel">
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}"
-                                                        alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">Agenda Rapat Rutin Dengan Karang Taruna</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline"></a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">6 Juni 2022</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">Selamat Hari Lahir Pancasila</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">1 Juni 2022</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">Agenda Gotong Royong Sesama Warga</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 April 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- post -->
-                                    <div class="post post-list-sm circle">
-                                        <div class="thumb circle">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">Inovasi Pelayanan Informasi Publik RW 13 Desa Cibiru Wetan</a></h6>
-                                            <ul class="mt-1 mb-0 meta list-inline">
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -215,7 +126,10 @@
                         <!-- section header -->
                         <div class="section-header">
                             <h3 class="section-title">Berita</h3>
+                        <div >
                             <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
+                        </div>
+                          
                         </div>
 
                         <div class="rounded padding-30 bordered">
@@ -224,13 +138,13 @@
                                     <!-- post -->
                                     <div class="post">
                                         <div class="rounded thumb">
-                                            <a href="category.html" class="category-badge position-absolute">Lifestyle</a>
+                                            <a href="category.html" class="category-badge position-absolute">Nasional</a>
                                             <span class="post-format">
                                                 <i class="icon-picture"></i>
                                             </span>
                                             <a href="blog-single.html">
                                                 <div class="inner">
-                                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
+                                                    <img src="{{ asset('assets/katen/images/posts/pancasila-1.jpeg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
@@ -318,8 +232,6 @@
                             </div>
                         </div>
 
-                        <div class="spacer" data-height="50"></div>
-
                         <!-- horizontal ads -->
                         <div class="ads-horizontal text-md-center">
                             <span class="ads-title">- Sponsored Ad -</span>
@@ -341,13 +253,13 @@
                                 <div class="col-sm-12">
                                     <!-- post large -->
                                     <div class="post">
-                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">VISI</a></h5>
+                                        <h5 class="mt-3 mb-3 post-title">VISI</h5>
                                         <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
                                             soul, like these sweet mornings of spring which I enjoy</p>
                                     </div>
                                     <!-- post large -->
                                     <div class="post">
-                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">MISI</a></h5>
+                                        <h5 class="mt-3 mb-3 post-title">MISI</h5>
                                         <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
                                             soul, like these sweet mornings of spring which I enjoy</p>
                                     </div>
@@ -359,7 +271,7 @@
 
                         <!-- section header -->
                         <div class="section-header">
-                            <h3 class="section-title">Inspiration</h3>
+                            <h3 class="section-title">Galeri Kegiatan</h3>
                             <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                             <div class="slick-arrows-top">
                                 <button type="button" data-role="none" class="carousel-topNav-prev slick-custom-buttons"
@@ -373,18 +285,17 @@
                             <!-- post -->
                             <div class="post post-over-content col-md-6">
                                 <div class="clearfix details">
-                                    <a href="category.html" class="category-badge">Inspiration</a>
-                                    <h4 class="post-title"><a href="blog-single.html">Want To Have A More Appealing
-                                            Tattoo?</a></h4>
+                                    <a href="category.html" class="category-badge">Agenda RW</a>
+                                    {{-- <h4 class="post-title"><a href="blog-single.html">Penanda Tanganan MoU antara Prodi RPL dan RW 13</a></h4>
                                     <ul class="mb-0 meta list-inline">
-                                        <li class="list-inline-item"><a href="#">Katen Doe</a></li>
+                                        <li class="list-inline-item"><a href="#">Admin</a></li>
                                         <li class="list-inline-item">29 March 2021</li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                                 <a href="blog-single.html">
-                                    <div class="rounded thumb">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/katen/images/posts/inspiration-1.jpg') }} " alt="thumb" />
+                                    <div class="rounded thumb ">
+                                        <div class="inner data-bg-image">
+                                            <img class="fix-image" src="{{ asset('assets/katen/images/posts/mou-1.jpg') }} " alt="thumb" />
                                         </div>
                                     </div>
                                 </a>
@@ -392,18 +303,12 @@
                             <!-- post -->
                             <div class="post post-over-content col-md-6">
                                 <div class="clearfix details">
-                                    <a href="category.html" class="category-badge">Inspiration</a>
-                                    <h4 class="post-title"><a href="blog-single.html">Feel Like A Pro With The Help Of
-                                            These 7 Tips</a></h4>
-                                    <ul class="mb-0 meta list-inline">
-                                        <li class="list-inline-item"><a href="#">Katen Doe</a></li>
-                                        <li class="list-inline-item">29 March 2021</li>
-                                    </ul>
+                                    <a href="category.html" class="category-badge">Agenda RT</a> 
                                 </div>
                                 <a href="blog-single.html">
                                     <div class="rounded thumb">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/katen/images/posts/inspiration-1.jpg') }}" alt="thumb" />
+                                        <div class="inner data-bg-image">
+                                            <img class="fix-image" src="https://narmadi.com/id/wp-content/uploads/2020/06/gambar-mewarnai-pemandangan.webp" alt="thumb" />
                                         </div>
                                     </div>
                                 </a>
@@ -411,18 +316,12 @@
                             <!-- post -->
                             <div class="post post-over-content col-md-6">
                                 <div class="clearfix details">
-                                    <a href="category.html" class="category-badge">Inspiration</a>
-                                    <h4 class="post-title"><a href="blog-single.html">Your Light Is About To Stop Being
-                                            Relevant</a></h4>
-                                    <ul class="mb-0 meta list-inline">
-                                        <li class="list-inline-item"><a href="#">Katen Doe</a></li>
-                                        <li class="list-inline-item">29 March 2021</li>
-                                    </ul>
+                                    <a href="category.html" class="category-badge">Agenda RW</a>
                                 </div>
                                 <a href="blog-single.html">
                                     <div class="rounded thumb">
-                                        <div class="inner">
-                                            <img src="images/posts/inspiration-3.jpg" alt="thumb" />
+                                        <div class="inner data-bg-image">
+                                            <img class="fix-image" src="{{ asset('assets/katen/images/posts/mou-2.jpeg') }}" alt="thumb" />
                                         </div>
                                     </div>
                                 </a>
@@ -433,213 +332,57 @@
 
                         <!-- section header -->
                         <div class="section-header">
-                            <h3 class="section-title">Latest Posts</h3>
-                            <img src="images/wave.svg" class="wave" alt="wave" />
+                            <h3 class="section-title">Data Penduduk</h3>
+                            <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                         </div>
 
                         <div class="rounded padding-30 bordered">
-
                             <div class="row">
-
-                                <div class="col-md-12 col-sm-6">
+                                <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="clearfix post post-list">
-                                        <div class="rounded thumb">
-                                            <span class="post-format-sm">
-                                                <i class="icon-picture"></i>
-                                            </span>
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/latest-sm-1.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
+                                    <div class="card border-primary">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Kepala Keluarga</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
                                         </div>
-                                        <div class="details">
-                                            <ul class="mb-3 meta list-inline">
-                                                <li class="list-inline-item"><a href="#"><img
-                                                            src="images/other/author-sm.png" class="author"
-                                                            alt="author" />Katen Doe</a></li>
-                                                <li class="list-inline-item"><a href="#">Trending</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                            <h5 class="post-title"><a href="blog-single.html">The Next 60 Things To
-                                                    Immediately Do About Building</a></h5>
-                                            <p class="mb-0 excerpt">A wonderful serenity has taken possession of my
-                                                entire soul, like these sweet mornings</p>
-                                            <div class="clearfix post-bottom d-flex align-items-center">
-                                                <div class="social-share me-auto">
-                                                    <button class="toggle-button icon-share"></button>
-                                                    <ul class="mb-0 icons list-unstyled list-inline">
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-facebook-f"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-twitter"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-linkedin-in"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-pinterest"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-telegram-plane"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="far fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="more-button float-end">
-                                                    <a href="blog-single.html"><span class="icon-options"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      </div>
                                 </div>
 
-                                <div class="col-md-12 col-sm-6">
+                                <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="clearfix post post-list">
-                                        <div class="rounded thumb">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/latest-sm-2.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
+                                    <div class="card border-primary">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Jenis Kelamin</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
                                         </div>
-                                        <div class="details">
-                                            <ul class="mb-3 meta list-inline">
-                                                <li class="list-inline-item"><a href="#"><img
-                                                            src="images/other/author-sm.png" class="author"
-                                                            alt="author" />Katen Doe</a></li>
-                                                <li class="list-inline-item"><a href="#">Lifestyle</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                            <h5 class="post-title"><a href="blog-single.html">Master The Art Of Nature
-                                                    With These 7 Tips</a></h5>
-                                            <p class="mb-0 excerpt">A wonderful serenity has taken possession of my
-                                                entire soul, like these sweet mornings</p>
-                                            <div class="clearfix post-bottom d-flex align-items-center">
-                                                <div class="social-share me-auto">
-                                                    <button class="toggle-button icon-share"></button>
-                                                    <ul class="mb-0 icons list-unstyled list-inline">
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-facebook-f"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-twitter"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-linkedin-in"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-pinterest"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-telegram-plane"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="far fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="more-button float-end">
-                                                    <a href="blog-single.html"><span class="icon-options"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      </div>
                                 </div>
 
-                                <div class="col-md-12 col-sm-6">
+                                <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="clearfix post post-list">
-                                        <div class="rounded thumb">
-                                            <span class="post-format-sm">
-                                                <i class="icon-camrecorder"></i>
-                                            </span>
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/latest-sm-3.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
+                                    <div class="card border-primary">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Kelompok Usia</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
                                         </div>
-                                        <div class="details">
-                                            <ul class="mb-3 meta list-inline">
-                                                <li class="list-inline-item"><a href="#"><img
-                                                            src="images/other/author-sm.png" class="author"
-                                                            alt="author" />Katen Doe</a></li>
-                                                <li class="list-inline-item"><a href="#">Fashion</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                            <h5 class="post-title"><a href="blog-single.html">Facts About Business That
-                                                    Will Help You Success</a></h5>
-                                            <p class="mb-0 excerpt">A wonderful serenity has taken possession of my
-                                                entire soul, like these sweet mornings</p>
-                                            <div class="clearfix post-bottom d-flex align-items-center">
-                                                <div class="social-share me-auto">
-                                                    <button class="toggle-button icon-share"></button>
-                                                    <ul class="mb-0 icons list-unstyled list-inline">
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-facebook-f"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-twitter"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-linkedin-in"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-pinterest"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-telegram-plane"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="far fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="more-button float-end">
-                                                    <a href="blog-single.html"><span class="icon-options"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      </div>
                                 </div>
 
-                                <div class="col-md-12 col-sm-6">
+                                <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="clearfix post post-list">
-                                        <div class="rounded thumb">
-                                            <a href="blog-single.html">
-                                                <div class="inner">
-                                                    <img src="images/posts/latest-sm-4.jpg" alt="post-title" />
-                                                </div>
-                                            </a>
+                                    <div class="card border-primary">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Agama</h5>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
                                         </div>
-                                        <div class="details">
-                                            <ul class="mb-3 meta list-inline">
-                                                <li class="list-inline-item"><a href="#"><img
-                                                            src="images/other/author-sm.png" class="author"
-                                                            alt="author" />Katen Doe</a></li>
-                                                <li class="list-inline-item"><a href="#">Politic</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                            <h5 class="post-title"><a href="blog-single.html">Your Light Is About To
-                                                    Stop Being Relevant</a></h5>
-                                            <p class="mb-0 excerpt">A wonderful serenity has taken possession of my
-                                                entire soul, like these sweet mornings</p>
-                                            <div class="clearfix post-bottom d-flex align-items-center">
-                                                <div class="social-share me-auto">
-                                                    <button class="toggle-button icon-share"></button>
-                                                    <ul class="mb-0 icons list-unstyled list-inline">
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-facebook-f"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-twitter"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-linkedin-in"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-pinterest"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="fab fa-telegram-plane"></i></a></li>
-                                                        <li class="list-inline-item"><a href="#"><i
-                                                                    class="far fa-envelope"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="more-button float-end">
-                                                    <a href="blog-single.html"><span class="icon-options"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                      </div>
                                 </div>
-
                             </div>
+
                             <!-- load more button -->
                             <div class="text-center">
                                 <button class="btn btn-simple">Load More</button>
@@ -675,7 +418,7 @@
                             <div class="rounded widget">
                                 <div class="text-center widget-header">
                                     <h3 class="widget-title">Popular Posts</h3>
-                                    <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" class="wave" alt="wave" />
+                                    <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                                 </div>
                                 <div class="widget-content">
                                     <!-- post -->
@@ -734,144 +477,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- widget categories -->
-                            <div class="rounded widget">
-                                <div class="text-center widget-header">
-                                    <h3 class="widget-title">Explore Topics</h3>
-                                    <img src="images/wave.svg" class="wave" alt="wave" />
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="list">
-                                        <li><a href="#">Lifestyle</a><span>(5)</span></li>
-                                        <li><a href="#">Inspiration</a><span>(2)</span></li>
-                                        <li><a href="#">Fashion</a><span>(4)</span></li>
-                                        <li><a href="#">Politic</a><span>(1)</span></li>
-                                        <li><a href="#">Trending</a><span>(7)</span></li>
-                                        <li><a href="#">Culture</a><span>(3)</span></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <!-- widget newsletter -->
-                            <div class="rounded widget">
-                                <div class="text-center widget-header">
-                                    <h3 class="widget-title">Newsletter</h3>
-                                    <img src="images/wave.svg" class="wave" alt="wave" />
-                                </div>
-                                <div class="widget-content">
-                                    <span class="mb-3 text-center newsletter-headline">Join 70,000 subscribers!</span>
-                                    <form>
-                                        <div class="mb-2">
-                                            <input class="text-center form-control w-100" placeholder="Email address…"
-                                                type="email">
-                                        </div>
-                                        <button class="btn btn-default btn-full" type="submit">Sign Up</button>
-                                    </form>
-                                    <span class="mt-3 text-center newsletter-privacy">By signing up, you agree to our <a
-                                            href="#">Privacy Policy</a></span>
-                                </div>
-                            </div>
-
-                            <!-- widget post carousel -->
-                            <div class="rounded widget">
-                                <div class="text-center widget-header">
-                                    <h3 class="widget-title">Celebration</h3>
-                                    <img src="images/wave.svg" class="wave" alt="wave" />
-                                </div>
-                                <div class="widget-content">
-                                    <div class="post-carousel-widget">
-                                        <!-- post -->
-                                        <div class="post post-carousel">
-                                            <div class="rounded thumb">
-                                                <a href="category.html" class="category-badge position-absolute">How to</a>
-                                                <a href="blog-single.html">
-                                                    <div class="inner">
-                                                        <img src="images/widgets/widget-carousel-1.jpg" alt="post-title" />
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <h5 class="mt-4 mb-0 post-title"><a href="blog-single.html">5 Easy Ways You Can
-                                                    Turn Future Into Success</a></h5>
-                                            <ul class="mt-2 mb-0 meta list-inline">
-                                                <li class="list-inline-item"><a href="#">Katen Doe</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                        <!-- post -->
-                                        <div class="post post-carousel">
-                                            <div class="rounded thumb">
-                                                <a href="category.html"
-                                                    class="category-badge position-absolute">Trending</a>
-                                                <a href="blog-single.html">
-                                                    <div class="inner">
-                                                        <img src="images/widgets/widget-carousel-2.jpg" alt="post-title" />
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <h5 class="mt-4 mb-0 post-title"><a href="blog-single.html">Master The Art Of
-                                                    Nature With These 7 Tips</a></h5>
-                                            <ul class="mt-2 mb-0 meta list-inline">
-                                                <li class="list-inline-item"><a href="#">Katen Doe</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                        <!-- post -->
-                                        <div class="post post-carousel">
-                                            <div class="rounded thumb">
-                                                <a href="category.html" class="category-badge position-absolute">How to</a>
-                                                <a href="blog-single.html">
-                                                    <div class="inner">
-                                                        <img src="images/widgets/widget-carousel-1.jpg" alt="post-title" />
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <h5 class="mt-4 mb-0 post-title"><a href="blog-single.html">5 Easy Ways You Can
-                                                    Turn Future Into Success</a></h5>
-                                            <ul class="mt-2 mb-0 meta list-inline">
-                                                <li class="list-inline-item"><a href="#">Katen Doe</a></li>
-                                                <li class="list-inline-item">29 March 2021</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- carousel arrows -->
-                                    <div class="slick-arrows-bot">
-                                        <button type="button" data-role="none"
-                                            class="carousel-botNav-prev slick-custom-buttons" aria-label="Previous"><i
-                                                class="icon-arrow-left"></i></button>
-                                        <button type="button" data-role="none"
-                                            class="carousel-botNav-next slick-custom-buttons" aria-label="Next"><i
-                                                class="icon-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- widget advertisement -->
-                            <div class="rounded widget no-container text-md-center">
-                                <span class="ads-title">- Sponsored Ad -</span>
-                                <a href="#" class="widget-ads">
-                                    <img src="images/ads/ad-360.png" alt="Advertisement" />
-                                </a>
-                            </div>
-
-                            <!-- widget tags -->
-                            <div class="rounded widget">
-                                <div class="text-center widget-header">
-                                    <h3 class="widget-title">Tag Clouds</h3>
-                                    <img src="images/wave.svg" class="wave" alt="wave" />
-                                </div>
-                                <div class="widget-content">
-                                    <a href="#" class="tag">#Trending</a>
-                                    <a href="#" class="tag">#Video</a>
-                                    <a href="#" class="tag">#Featured</a>
-                                    <a href="#" class="tag">#Gallery</a>
-                                    <a href="#" class="tag">#Celebrities</a>
-                                </div>
-                            </div>
-
-                        </div>
-
                     </div>
 
                 </div>
@@ -879,6 +484,9 @@
             </div>
         </section>
         <div class="w-full">
+            <div class="text-center">
+                <h3>Lokasi Kami</h3>
+            </div>
             <div class="w-full m-10 mapoutew">
                 <div class="w-full gmap_canvas">
                     <iframe class="w-full" width="100%" height="276" id="gmap_canvas"
@@ -895,7 +503,6 @@
                             background: none !important;
                            
                         }
-
                     </style>
                 </div>
             </div>
@@ -961,7 +568,7 @@
 
         <!-- logo -->
         <div class="logo">
-            <img src="images/logo.svg" alt="Katen" />
+            <h1>E-RW 13</h1>
         </div>
 
         <!-- menu -->
@@ -982,7 +589,6 @@
                         <li><a href="blog-single.html">Data Jenis Kelamin</a></li>
                         <li><a href="blog-single-alt.html">Kelompok Usia</a></li>
                         <li><a href="category.html">Agama</a></li>
-                        <li><a href="contact.html">Vaksin</a></li>
                     </ul>
                 </li>
                 <li>
