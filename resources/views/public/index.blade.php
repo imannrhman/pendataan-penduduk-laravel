@@ -58,13 +58,6 @@
 
                     <!-- header right section -->
                     <div class="header-right">
-                        <!-- social icons -->
-                        <ul class="mb-0 social-icons list-unstyled list-inline">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
                         <!-- header buttons -->
                         <div class="header-buttons">
                             <button class="search icon-button">
@@ -254,14 +247,19 @@
                                     <!-- post large -->
                                     <div class="post">
                                         <h5 class="mt-3 mb-3 post-title">VISI</h5>
-                                        <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
-                                            soul, like these sweet mornings of spring which I enjoy</p>
+                                        <p class="mb-0 excerpt">“Terwujudnya RW 01 sebagai wilayah yang Religius, Aman, Kreatif , Sehat dan Indah yang dilakukan secara bersama”</p>
                                     </div>
                                     <!-- post large -->
                                     <div class="post">
                                         <h5 class="mt-3 mb-3 post-title">MISI</h5>
-                                        <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
-                                            soul, like these sweet mornings of spring which I enjoy</p>
+                                        <div class="mb-0 excerpt">
+                                            <ol class="list" type="1">
+                                                <li>Meningkatkan peran serta warga RW 03 dalam menciptakan kebersihan, keindahan lingkungan, dan wilayah bebas banjir</li>
+                                                <li>Meningkatkan kesadaran warga RW 03 tentang pentingnya kesehatan keluarga</li>
+                                                <li>Meningkatkan peran aktif warga RW 01 dalam menciptakan keamanan dan ketertiban lingkungan</li>
+                                                <li>Mendorong semangat kreatifitas warga untuk memajukan wilayahnya dari segala aspek sehingga menjadi RW yang maju dan terdepan</li>
+                                              </ol>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +267,7 @@
 
                         <div class="spacer" data-height="50"></div>
 
-                        <!-- section header -->
+                        {{-- <!-- section header -->
                         <div class="section-header">
                             <h3 class="section-title">Galeri Kegiatan</h3>
                             <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
@@ -279,18 +277,13 @@
                                 <button type="button" data-role="none" class="carousel-topNav-next slick-custom-buttons"
                                     aria-label="Next"><i class="icon-arrow-right"></i></button>
                             </div>
-                        </div>
+                        </div> --}}
 
-                        <div class="row post-carousel-twoCol post-carousel">
+                        {{-- <div class="row post-carousel-twoCol post-carousel">
                             <!-- post -->
                             <div class="post post-over-content col-md-6">
                                 <div class="clearfix details">
                                     <a href="category.html" class="category-badge">Agenda RW</a>
-                                    {{-- <h4 class="post-title"><a href="blog-single.html">Penanda Tanganan MoU antara Prodi RPL dan RW 13</a></h4>
-                                    <ul class="mb-0 meta list-inline">
-                                        <li class="list-inline-item"><a href="#">Admin</a></li>
-                                        <li class="list-inline-item">29 March 2021</li>
-                                    </ul> --}}
                                 </div>
                                 <a href="blog-single.html">
                                     <div class="rounded thumb ">
@@ -326,9 +319,9 @@
                                     </div>
                                 </a>
                             </div>
-                        </div>
+                        </div> --}}
 
-                        <div class="spacer" data-height="50"></div>
+                        {{-- <div class="spacer" data-height="50"></div> --}}
 
                         <!-- section header -->
                         <div class="section-header">
@@ -340,84 +333,97 @@
                             <div class="row">
                                 <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="card border-primary">
+                                    <div class="card border-warning">
                                         <div class="card-body">
                                           <h5 class="card-title">Kepala Keluarga</h5>
-                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                          <p class="card-text">Data statistik jumlah warga berdasarkan Kepala keluarga di RW 13</p>
+                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
 
                                 <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="card border-primary">
+                                    <div class="card border-warning">
                                         <div class="card-body">
                                           <h5 class="card-title">Jenis Kelamin</h5>
-                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                          <p class="card-text">Data statistik jumlah Warga berdasarkan di RW 13</p>
+                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
 
                                 <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="card border-primary">
+                                    <div class="card border-warning">
                                         <div class="card-body">
                                           <h5 class="card-title">Kelompok Usia</h5>
-                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                          <p class="card-text">Data statistik jumlah warga berdasarkan kelompok usia di RW 13</p>
+                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
 
                                 <div class="col-sm-6 mb-5">
                                     <!-- post -->
-                                    <div class="card border-primary">
+                                    <div class="card border-warning">
                                         <div class="card-body">
                                           <h5 class="card-title">Agama</h5>
-                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                          <p class="card-text">Data statistik jumlah warga berdasarkan Kelompok agama di RW 13</p>
+                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
                             </div>
 
                             <!-- load more button -->
-                            <div class="text-center">
+                            {{-- <div class="text-center">
                                 <button class="btn btn-simple">Load More</button>
-                            </div>
+                            </div> --}}
+                        </div>
+                        <div class="spacer" data-height="50"></div>
 
+                        <!-- section header -->
+                        <div class="section-header">
+                            <h3 class="section-title">Form Keluhan</h3>
+                            <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                         </div>
 
+                        <div class="rounded padding-30 bordered">
+                            <div class="row gy-5">
+                                <div class="col-sm-12">
+                                    <!-- post large -->
+                                    <div class="post">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1">Isi Form</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                <br>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
 
+                    <div class="col-lg-4">
                         <!-- sidebar -->
                         <div class="sidebar">
                             <!-- widget about -->
                             <div class="rounded widget">
                                 <div class="text-center widget-about data-bg-image" data-bg-image="images/map-bg.png">
-                                    <h1>E-RW 13</h1>
-                                    <p class="mb-4">Hello, We’re content writer who is fascinated by content
-                                        fashion, celebrity and lifestyle. We helps clients bring the right content to the
-                                        right people.</p>
-                                    <ul class="mb-0 social-icons list-unstyled list-inline">
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
-                                        <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    </ul>
+                                    <h1 class="mb-0">E-RW 13</h1>
+                                    <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
+                                    <p class="mb-4">Merupakan layanan online yang dibuat untuk membantu perangkat sekretariat RW dalam pengelolaan data penduduk RW 13 Desa Cibiru Wetan serta warga untuk mendapatkan informasi yang dapat digunakan kapan dan di mana saja melalui suatu perangkat.</p>
                                 </div>
                             </div>
 
                             <!-- widget popular posts -->
-                            <div class="rounded widget">
+                            {{-- <div class="rounded widget">
                                 <div class="text-center widget-header">
-                                    <h3 class="widget-title">Popular Posts</h3>
+                                    <h3 class="widget-title">Layanan Publik</h3>
                                     <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                                 </div>
                                 <div class="widget-content">
@@ -476,12 +482,70 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
+
+                            <!-- widget categories -->
+						    <div class="widget rounded">
+							    <div class="widget-header text-center">
+								    <h3 class="widget-title">Layanan</h3>
+								    <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
+							    </div>
+							    <div class="widget-content">
+								    <ul class="list">
+									    <li><a href="#">E-KTP</a></li>
+									    <li><a href="#">Kartu Keluarga</a></li>
+									    <li><a href="#">Akta Kelahiran</a></li>
+								    </ul>
+							    </div>
+						    </div>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
+
+            {{-- Galer --}}
+            <!-- instagram feed -->
+	<div class="instagram">
+		<div class="container-xl">
+            <div class="section-header">
+                <h3 class="text-center">Galeri Kegiatan</h3>
+            </div>
+			<!-- images -->
+			<div class="instagram-feed d-flex flex-wrap">
+				<div class="insta-item col-sm-2 col-6 col-md-2">
+					<a href="#">
+						<img src="{{ asset('assets/katen/images/posts/mou-1.jpg') }}" alt="insta-title" />
+					</a>
+				</div>
+				<div class="insta-item col-sm-2 col-6 col-md-2">
+					<a href="#">
+						<img src="{{ asset('assets/katen/images/posts/mou-2.jpeg') }}" alt="insta-title" />
+					</a>
+				</div>
+				<div class="insta-item col-sm-2 col-6 col-md-2">
+					<a href="#">
+						<img src="{{ asset('assets/katen/images/posts/mou-1.jpg') }}" alt="insta-title" />
+					</a>
+				</div>
+				<div class="insta-item col-sm-2 col-6 col-md-2">
+					<a href="#">
+						<img src="{{ asset('assets/katen/images/posts/mou-2.jpeg') }}" alt="insta-title" />
+					</a>
+				</div>
+				<div class="insta-item col-sm-2 col-6 col-md-2">
+					<a href="#">
+						<img src="{{ asset('assets/katen/images/posts/mou-1.jpg') }}" alt="insta-title" />
+					</a>
+				</div>
+				<div class="insta-item col-sm-2 col-6 col-md-2">
+					<a href="#">
+						<img src="{{ asset('assets/katen/images/posts/mou-2.jpeg') }}" alt="insta-title" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
         </section>
         <div class="w-full">
             <div class="text-center">
