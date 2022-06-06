@@ -540,7 +540,7 @@ blockquote p {
 /*                      HEADER                              
 /*=================================================================*/
 .header-default {
-  padding: 40px 0;
+  padding: 10px 0;
   position: relative;
   width: 100%;
 }
@@ -1522,7 +1522,6 @@ section {
 }
 .post.post-over-content .thumb:after {
   content: "";
-  background: #203656;
   display: block;
   height: 100%;
   left: 0;
@@ -2909,6 +2908,11 @@ button:focus {
 .slick-custom-buttons:hover {
   color: #2155CD;
   border-color: #2155CD;
+}
+
+.fix-image {
+  height: 250px;
+  object-fit: cover;
 }
 
 /*=================================================================*/
