@@ -1,3 +1,4 @@
+
 @extends('layouts.public')
 
 @section('content')
@@ -12,6 +13,7 @@
 			<div class="container-xl">
 				<!-- site logo -->
 
+
 				<a class="navbar-brand" href="{{url("/")}}">
 					<h3>E-RW 13</h3>
 				</a>
@@ -22,7 +24,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="{{url("/")}}">Home</a>
 						</li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle">Profil</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="{{ route('struktur') }}">Struktur Organisasi</a></li>
@@ -46,7 +48,7 @@
 								<li><a class="dropdown-item" href="{{ route('info_brt') }}">Berita</a></li>
 							</ul>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="{{ route('about') }}">Tentang</a>
 						</li>
 						<li class="nav-item">
@@ -75,11 +77,11 @@
     <section class="page-header">
         <div class="container-xl">
             <div class="text-center">
-                <h1 class="mt-0 mb-2">Tentang</h1>
+                <h1 class="mt-0 mb-2">Struktur Organisasi</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="mb-0 breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="{{url("/")}}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Tentang</li>
+                        <li class="breadcrumb-item active" aria-current="page">Struktur Organisasi</li>
                     </ol>
                 </nav>
             </div>
@@ -95,8 +97,9 @@
 				<div class="col-lg-12">
 
                     <div class="rounded page-content bordered padding-30">
-
-                        <img src="{{ asset('assets/katen/images/other/about.jpg') }}" alt="Katen Doe" class="mb-4 rounded" />
+						<div class="d-flex justify-content-center">
+							<img src="{{ asset('assets/katen/images/profile/struktur.jpg') }}" alt="Katen Doe" class="mb-4 rounded" />
+						</div>
 
                         <p>Hello, I’m a content writer who is fascinated by content fashion, celebrity and lifestyle. She helps clients bring the right content to the right people.</p>
 
@@ -107,18 +110,13 @@
                         <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
 
                         <hr class="my-4" />
-                        <ul class="mb-0 social-icons list-unstyled list-inline">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                        
                     </div>
 
                 </div>
+			</div>
+
+		</div>
+	</section>
 
 	<!-- footer -->
 	<footer>
@@ -136,8 +134,6 @@
 							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
 						</ul>
 					</div>
@@ -226,3 +222,4 @@
 	</ul>
 </div>
 @endsection
+

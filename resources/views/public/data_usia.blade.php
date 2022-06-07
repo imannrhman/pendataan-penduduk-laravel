@@ -1,3 +1,4 @@
+
 @extends('layouts.public')
 
 @section('content')
@@ -30,7 +31,7 @@
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#">Data Penduduk</a>
+							<a class="nav-link dropdown-toggle active" href="#">Data Penduduk</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="{{ route('data_kk') }}">Kepala Keluarga</a></li>
 								<li><a class="dropdown-item" href="{{ route('data_wrg') }}">Data Warga</a></li>
@@ -46,7 +47,7 @@
 								<li><a class="dropdown-item" href="{{ route('info_brt') }}">Berita</a></li>
 							</ul>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="{{ route('about') }}">Tentang</a>
 						</li>
 						<li class="nav-item">
@@ -75,11 +76,11 @@
     <section class="page-header">
         <div class="container-xl">
             <div class="text-center">
-                <h1 class="mt-0 mb-2">Tentang</h1>
+                <h1 class="mt-0 mb-2">Kelompok Usia</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="mb-0 breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="{{url("/")}}">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Tentang</li>
+                        <li class="breadcrumb-item active" aria-current="page">Kelompok Usia</li>
                     </ol>
                 </nav>
             </div>
@@ -95,30 +96,77 @@
 				<div class="col-lg-12">
 
                     <div class="rounded page-content bordered padding-30">
-
-                        <img src="{{ asset('assets/katen/images/other/about.jpg') }}" alt="Katen Doe" class="mb-4 rounded" />
-
-                        <p>Hello, I’m a content writer who is fascinated by content fashion, celebrity and lifestyle. She helps clients bring the right content to the right people.</p>
-
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <div class="post text-center">
+                            <h5 class="mb-0">STATISTIK KELOMPOK USIA</h5>
+                            <p>RW 13 Desa Cibiru Wetan Kecataman Cileunyi Kabupaten Bandung</p>
+                        </div>
                         
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                        
-                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+						<table class="table table-bordered">
+                            <thead class="thead-dark" style="background: #2155CD; color: #FFFF">
+                              <tr class="text-center">
+                                <th scope="col">RT</th>
+                                <th scope="col">Jumlah Warga</th>
+                                <th colspan="2">Balita</th>
+                                <th colspan="2">Anak-Anak</th>\
+								<th colspan="2">Remaja</th>
+                                <th colspan="2">Dewasa</th>
+                                <th colspan="2">Lansia</th> 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text-center">
+                                <th scope="row">1</th>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+								<td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr class="text-center">
+                                <th scope="row">2</th>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+								<td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+                              </tr>
+                              <tr class="text-center">
+                                <th scope="row">3</th>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+								<td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+                                <td>0</td>
+                                <td>0%</td>
+                              </tr>
+                            </tbody>
+                          </table>
 
                         <hr class="my-4" />
-                        <ul class="mb-0 social-icons list-unstyled list-inline">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                        
                     </div>
 
                 </div>
+			</div>
+
+		</div>
+	</section>
 
 	<!-- footer -->
 	<footer>
@@ -136,8 +184,6 @@
 							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
 						</ul>
 					</div>
@@ -226,3 +272,7 @@
 	</ul>
 </div>
 @endsection
+
+@push('page-scripts')
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+@endpush
