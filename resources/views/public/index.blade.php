@@ -13,7 +13,7 @@
                     <!-- site logo -->
 
 
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{url("/")}}">
                         <h3>E-RW 13</h3>
                     </a>
 
@@ -24,34 +24,34 @@
                                 <a class="nav-link" href="{{url("/")}}">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="{{ url('/profile') }}">Profil</a>
+                                <a class="nav-link dropdown-toggle">Profil</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="category.html">Struktur Organisasi</a></li>
-                                    <li><a class="dropdown-item" href="blog-single.html">Visi dan Misi</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('struktur') }}">Struktur Organisasi</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('visi') }}">Visi dan Misi</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#">Data Penduduk</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="category.html">Kepala Keluarga</a></li>
-                                    <li><a class="dropdown-item" href="blog-single.html">Data Jenis Kelamin</a></li>
-                                    <li><a class="dropdown-item" href="blog-single-alt.html">Kelompok Usia</a></li>
-                                    <li><a class="dropdown-item" href="category.html">Agama</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('data_kk') }}">Kepala Keluarga</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('data_wrg') }}">Data Warga</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('data_usia') }}">Kelompok Usia</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('data_agama') }}">Agama</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#">Info</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="category.html">Agenda RW</a></li>
-                                    <li><a class="dropdown-item" href="blog-single.html">Agenda RT</a></li>
-                                    <li><a class="dropdown-item" href="blog-single-alt.html">Berita</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('info_rw') }}">Agenda RW</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('info_rt') }}">Agenda RT</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('info_brt') }}">Berita</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('about') }}">Tentang</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Layanan</a>
+                                <a class="nav-link" href="{{ route('layanan_ktp') }}">Layanan</a>
                             </li>
                         </ul>
                     </div>
@@ -86,14 +86,14 @@
                         <!-- featured post large -->
                         <div class="post featured-post-lg">
                             <div class="clearfix details">
-                                <a href="category.html" class="category-badge">Pendidikan</a>
-                                <h2 class="post-title"><a href="blog-single.html">Prodi Rekayasa Perangkat Lunak UPI Kampus Cibiru Bekerja Sama dengan RW 13</a></h2>
+                                <a href="#" class="category-badge">Pendidikan</a>
+                                <h2 class="post-title"><a href="{{ route('info_brt') }}">Prodi Rekayasa Perangkat Lunak UPI Kampus Cibiru Bekerja Sama dengan RW 13</a></h2>
                                 <ul class="mb-0 meta list-inline">
                                     <li class="list-inline-item"><a href="#">Admin</a></li>
                                     <li class="list-inline-item">5 Juni 2022</li>
                                 </ul>
                             </div>
-                            <a href="blog-single.html">
+                            <a href="{{ route('info_brt') }}">
                                 <div class="rounded thumb">
                                     <div class="inner data-bg-image"
                                         data-bg-image="https://scontent.fcgk8-1.fna.fbcdn.net/v/t39.30808-6/277586343_645331553560004_8058699531532527896_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IMpW78QnTJQAX-MvwYk&_nc_zt=23&_nc_ht=scontent.fcgk8-1.fna&oh=00_AT8lauc5xu7Xm6GcBn2SyFiLvdahUXjQoQwsbaBGPmC-FQ&oe=62A0155E">
@@ -135,7 +135,7 @@
                                             <span class="post-format">
                                                 <i class="icon-picture"></i>
                                             </span>
-                                            <a href="blog-single.html">
+                                            <a href="{{ route('info_brt') }}">
                                                 <div class="inner">
                                                     <img src="{{ asset('assets/katen/images/posts/pancasila-1.jpeg') }}" alt="post-title" />
                                                 </div>
@@ -146,7 +146,7 @@
                                                         class="author" alt="author" />Admin</a></li>
                                             <li class="list-inline-item">29 March 2021</li>
                                         </ul>
-                                        <h5 class="mt-3 mb-3 post-title"><a href="blog-single.html">15 Unheard Ways To
+                                        <h5 class="mt-3 mb-3 post-title"><a href="{{ route('info_brt') }}">15 Unheard Ways To
                                                 Achieve Greater Walker</a></h5>
                                         <p class="mb-0 excerpt">A wonderful serenity has taken possession of my entire
                                             soul, like these sweet mornings of spring which I enjoy</p>
@@ -156,14 +156,14 @@
                                     <!-- post -->
                                     <div class="post post-list-sm square">
                                         <div class="rounded thumb">
-                                            <a href="blog-single.html">
+                                            <a href="{{ route('info_brt') }}">
                                                 <div class="inner">
                                                     <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">3 Easy Ways To Make Your
+                                            <h6 class="my-0 post-title"><a href="{{ route('info_brt') }}">3 Easy Ways To Make Your
                                                     iPhone Faster</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
                                                 <li class="list-inline-item">29 March 2021</li>
@@ -173,14 +173,14 @@
                                     <!-- post -->
                                     <div class="post post-list-sm square">
                                         <div class="rounded thumb">
-                                            <a href="blog-single.html">
+                                            <a href="{{ route('info_brt') }}">
                                                 <div class="inner">
                                                     <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">An Incredibly Easy
+                                            <h6 class="my-0 post-title"><a href="{{ route('info_brt') }}">An Incredibly Easy
                                                     Method That Works For All</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
                                                 <li class="list-inline-item">29 March 2021</li>
@@ -190,14 +190,14 @@
                                     <!-- post -->
                                     <div class="post post-list-sm square">
                                         <div class="rounded thumb">
-                                            <a href="blog-single.html">
+                                            <a href="{{ route('info_brt') }}">
                                                 <div class="inner">
                                                     <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">10 Ways To Immediately
+                                            <h6 class="my-0 post-title"><a href="{{ route('info_brt') }}">10 Ways To Immediately
                                                     Start Selling Furniture</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
                                                 <li class="list-inline-item">29 March 2021</li>
@@ -207,14 +207,14 @@
                                     <!-- post -->
                                     <div class="post post-list-sm square">
                                         <div class="rounded thumb">
-                                            <a href="blog-single.html">
+                                            <a href="{{ route('info_brt') }}">
                                                 <div class="inner">
                                                     <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="post-title" />
                                                 </div>
                                             </a>
                                         </div>
                                         <div class="clearfix details">
-                                            <h6 class="my-0 post-title"><a href="blog-single.html">15 Unheard Ways To
+                                            <h6 class="my-0 post-title"><a href="{{ route('info_brt') }}">15 Unheard Ways To
                                                     Achieve Greater Walker</a></h6>
                                             <ul class="mt-1 mb-0 meta list-inline">
                                                 <li class="list-inline-item">29 March 2021</li>
@@ -247,7 +247,7 @@
                                     <!-- post large -->
                                     <div class="post">
                                         <h5 class="mt-3 mb-3 post-title">VISI</h5>
-                                        <p class="mb-0 excerpt">“Terwujudnya RW 01 sebagai wilayah yang Religius, Aman, Kreatif , Sehat dan Indah yang dilakukan secara bersama”</p>
+                                        <p class="mb-0 excerpt">“Terwujudnya RW 03 sebagai wilayah yang Religius, Aman, Kreatif , Sehat dan Indah yang dilakukan secara bersama”</p>
                                     </div>
                                     <!-- post large -->
                                     <div class="post">
@@ -285,7 +285,7 @@
                                 <div class="clearfix details">
                                     <a href="category.html" class="category-badge">Agenda RW</a>
                                 </div>
-                                <a href="blog-single.html">
+                                <a href="{{ route('info_brt') }}">
                                     <div class="rounded thumb ">
                                         <div class="inner data-bg-image">
                                             <img class="fix-image" src="{{ asset('assets/katen/images/posts/mou-1.jpg') }} " alt="thumb" />
@@ -298,7 +298,7 @@
                                 <div class="clearfix details">
                                     <a href="category.html" class="category-badge">Agenda RT</a> 
                                 </div>
-                                <a href="blog-single.html">
+                                <a href="{{ route('info_brt') }}">
                                     <div class="rounded thumb">
                                         <div class="inner data-bg-image">
                                             <img class="fix-image" src="https://narmadi.com/id/wp-content/uploads/2020/06/gambar-mewarnai-pemandangan.webp" alt="thumb" />
@@ -337,7 +337,7 @@
                                         <div class="card-body">
                                           <h5 class="card-title">Kepala Keluarga</h5>
                                           <p class="card-text">Data statistik jumlah warga berdasarkan Kepala keluarga di RW 13</p>
-                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
+                                          <a href="{{ route('data_kk') }}" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
@@ -346,9 +346,9 @@
                                     <!-- post -->
                                     <div class="card border-warning">
                                         <div class="card-body">
-                                          <h5 class="card-title">Jenis Kelamin</h5>
+                                          <h5 class="card-title">Data Warga</h5>
                                           <p class="card-text">Data statistik jumlah Warga berdasarkan di RW 13</p>
-                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
+                                          <a href="{{ route('data_wrg') }}" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
@@ -359,7 +359,7 @@
                                         <div class="card-body">
                                           <h5 class="card-title">Kelompok Usia</h5>
                                           <p class="card-text">Data statistik jumlah warga berdasarkan kelompok usia di RW 13</p>
-                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
+                                          <a href="{{ route('data_usia') }}" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
@@ -370,7 +370,7 @@
                                         <div class="card-body">
                                           <h5 class="card-title">Agama</h5>
                                           <p class="card-text">Data statistik jumlah warga berdasarkan Kelompok agama di RW 13</p>
-                                          <a href="#" class="btn btn-warning">Klik Di Sini</a>
+                                          <a href="{{ route('data_agama') }}" class="btn btn-warning">Klik Di Sini</a>
                                         </div>
                                       </div>
                                 </div>
@@ -394,13 +394,20 @@
                                 <div class="col-sm-12">
                                     <!-- post large -->
                                     <div class="post">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Isi Form</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                                <br>
-                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                        <form id="comment-form" class="comment-form" method="post">
+                                            <div class="messages"></div>
+                                            <div class="row">
+                                                <div class="column col-md-12">
+                                                    <!-- Comment textarea -->
+                                                    <div class="form-group">
+                                                        <textarea name="InputComment" id="InputComment" class="form-control" rows="4" placeholder="Your comment here..." required="required"></textarea>
+                                                    </div>
+                                                </div>
+                                        
                                             </div>
+                    
+                                            <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Submit</button><!-- Submit Button -->
+                    
                                         </form>
                                     </div>
                                 </div>
@@ -492,9 +499,9 @@
 							    </div>
 							    <div class="widget-content">
 								    <ul class="list">
-									    <li><a href="#">E-KTP</a></li>
-									    <li><a href="#">Kartu Keluarga</a></li>
-									    <li><a href="#">Akta Kelahiran</a></li>
+									    <li><a href="{{ route('layanan_ktp') }}">E-KTP</a></li>
+									    <li><a href="{{ route('layanan_kk') }}">Kartu Keluarga</a></li>
+									    <li><a href="{{ route('layanan_ak') }}">Akta Kelahiran</a></li>
 								    </ul>
 							    </div>
 						    </div>
@@ -642,32 +649,32 @@
                 <li >
                     <a href="#">Profil</a>
                     <ul class="submenu">
-                        <li><a href="category.html">Struktur Organisasi</a></li>
-                        <li><a href="blog-single.html">Visi dan Misi</a></li>
+                        <li><a href="{{ route('struktur') }}">Struktur Organisasi</a></li>
+                        <li><a href="{{ route('visi') }}">Visi dan Misi</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Data Penduduk</a>
                     <ul class="submenu">
-                        <li><a href="category.html">Kepala Keluarga</a></li>
-                        <li><a href="blog-single.html">Data Jenis Kelamin</a></li>
-                        <li><a href="blog-single-alt.html">Kelompok Usia</a></li>
-                        <li><a href="category.html">Agama</a></li>
+                        <li><a href="{{ route('data_kk') }}">Kepala Keluarga</a></li>
+                        <li><a href="{{ route('data_wrg') }}">Data Warga</a></li>
+                        <li><a href="{{ route('data_usia') }}">Kelompok Usia</a></li>
+                        <li><a href="{{ route('data_agama') }}">Agama</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Info</a>
                     <ul class="submenu">
-                        <li><a href="category.html">Agenda RW</a></li>
-                        <li><a href="blog-single.html">Agenda RT</a></li>
-                        <li><a href="blog-single-alt.html">Berita</a></li>
+                        <li><a href="{{ route('info_rw') }}">Agenda RW</a></li>
+                        <li><a href="{{ route('info_rt') }}">Agenda RT</a></li>
+                        <li><a href="{{ route('info_brt') }}">Berita</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="{{ route('about') }}">Tentang</a>
                 </li>
                 <li>
-                    <a href="contact.html">Layanan</a>
+                    <a href="contact.html"href="{{ route('layanan_ktp') }}">Layanan</a>
                 </li>
             </ul>
         </nav>
