@@ -21,7 +21,4 @@ Route::get('/', function () {
 
 Route::get('/about', function () {
     return view('public.about');
-});
-
-
-
+})->name('about');
