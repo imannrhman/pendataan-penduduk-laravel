@@ -17,37 +17,52 @@ class EducationSeeder extends Seeder
     {
         $education = [
             [
-                'name' => 'Tidak Sekolah',
+                'name' => 'TIDAK/BELUM SEKOLAH',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'SD',
+                'name' => 'BELUM TAMAT SD/SEDERAJAT',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'SMP',
+                'name' => 'TAMAT/SD SEDERAJAT',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'SMA/SMK Sederejat',
+                'name' => 'SLTP/SEDERAJAT',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Sarjana',
+                'name' => 'SLTA/SEDERAJAT',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Magister',
+                'name' => 'DIPLOMA I/II',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Doctor',
+                'name' => 'AKADEMI/DIPLOMA III/S. MUDA',
+                'created_at' => new \DateTime,
+                'updated_at' => null,
+            ],
+            [
+                'name' => 'DIPLOMA IV/STRATA I',
+                'created_at' => new \DateTime,
+                'updated_at' => null,
+            ],
+            [
+                'name' => 'STRATA II',
+                'created_at' => new \DateTime,
+                'updated_at' => null,
+            ],
+            [
+                'name' => 'STRATA III',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ]

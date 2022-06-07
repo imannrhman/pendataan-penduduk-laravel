@@ -16,7 +16,8 @@ return new class extends Migration
         Schema::create('families', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('no_kk')->unique('no_kk');
-            $table->string('alamat');
+            $table->string('address');
+            $table->string('postal_code', 5);
             $table->timestamps();
         });
     }

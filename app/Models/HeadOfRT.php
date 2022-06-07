@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class HeadOfRT extends Model
 {
+
     use HasFactory;
 }

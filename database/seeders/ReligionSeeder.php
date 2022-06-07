@@ -17,27 +17,32 @@ class ReligionSeeder extends Seeder
     {
         $religions = [
             [
-                'name' => 'Islam',
+                'name' => 'ISLAM',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Kristen',
+                'name' => 'PROTESTAN',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Budha',
+                'name' => 'KATOLIK',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Hindu',
+                'name' => 'HINDU',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ],
             [
-                'name' => 'Kongucu',
+                'name' => 'BUDDHA',
+                'created_at' => new \DateTime,
+                'updated_at' => null,
+            ],
+            [
+                'name' => 'KONGUCHU',
                 'created_at' => new \DateTime,
                 'updated_at' => null,
             ]
