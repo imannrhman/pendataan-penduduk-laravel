@@ -229,7 +229,7 @@
                         <div class="ads-horizontal text-md-center">
                             <span class="ads-title">- Sponsored Ad -</span>
                             <a href="#">
-                                <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }} alt="Advertisement" />
+                                <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="Advertisement"/>
                             </a>
                         </div>
 
