@@ -23,28 +23,28 @@ class Civilian extends Model
     ];
 
     public function birthplace() {
-        return $this->hasOne(BirthPlace::class,  'birthplace_id');
+        return $this->hasOne(BirthPlace::class,  'id','birthplace_id');
     }
 
     public function profession() {
-        return $this->hasOne(Profession::class, 'profession_id');
+        return $this->hasOne(Profession::class, 'id','profession_id');
     }
 
 
     public function religion() {
-        return $this->hasOne(Religion::class, 'religion_id');
+        return $this->hasOne(Religion::class, 'id','religion_id');
     }
 
     public function education() {
-        return $this->hasOne(Education::class, 'education_id');
+        return $this->hasOne(Education::class, 'id','education_id');
     }
 
     public function maritalStatus() {
-        return $this->hasOne(MaritalStatus::class, 'marital_status_id');
+        return $this->hasOne(MaritalStatus::class, 'id','marital_status_id');
     }
 
     public function familyStatus() {
-        return $this->hasOne(FamilyStatus::class, 'family_status_id');
+        return $this->hasOne(FamilyStatus::class, 'id','family_status_id');
     }
 
 

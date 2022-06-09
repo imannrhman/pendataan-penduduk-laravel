@@ -2,7 +2,7 @@
 @section('title', 'Laravel')
 
 @push('page-styles')
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/stisla/css/daterangepicker.css')}}"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
 @endpush()
 
@@ -135,7 +135,7 @@
                                        class="col-form-label text-md-right col-12 col-md-3 col-lg-3 align-self-center">Tanggal
                                     Lahir</label>
                                 <div class="col-sm-12 col-md-7">
-                                    <input id="biodata[0][date]" name="biodata[0][date]" type="text"
+                                    <input id="biodata[0][date]" name="biodata[0][date]" type="date"
                                            class="form-control datepicker">
                                 </div>
                             </div>
@@ -211,7 +211,7 @@
                                        class="col-form-label text-md-right col-12 col-md-3 col-lg-3 align-self-center">Tanggal
                                     Perkawinan</label>
                                 <div class="col-sm-12 col-md-7">
-                                    <input type="text" class="form-control datepicker" name="biodata[0][wedding_date]"
+                                    <input type="date" class="form-control datepicker" name="biodata[0][wedding_date]"
                                            id="biodata[0][wedding_date]">
                                 </div>
                             </div>
@@ -324,8 +324,6 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
-    <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="{{ asset('assets/stisla/js/page/forms-advanced-forms.js') }}"></script>
 
     <script>
@@ -438,7 +436,7 @@
                                        class="col-form-label text-md-right col-12 col-md-3 col-lg-3 align-self-center">Tanggal
                                     Lahir</label>
                                 <div class="col-sm-12 col-md-7">
-                                    <input id="biodata[` + i + `][date]" name="biodata[` + i + `][date]" type="text"
+                                    <input id="biodata[` + i + `][date]" name="biodata[` + i + `][date]" type="date"
                                            class="form-control datepicker">
                                 </div>
                             </div>
@@ -514,7 +512,7 @@
                    class="col-form-label text-md-right col-12 col-md-3 col-lg-3 align-self-center">Tanggal
                 Perkawinan</label>
             <div class="col-sm-12 col-md-7">
-                <input type="text" class="form-control datepicker" name="biodata[` + i + `][wedding_date]"
+                <input type="date" class="form-control datepicker" name="biodata[` + i + `][wedding_date]"
                        id="biodata[` + i + `][wedding_date]">
             </div>
         </div>
@@ -593,7 +591,6 @@
 
 </div>
 </div>
-
 `);
 
             ++i;
@@ -602,9 +599,13 @@
             $(this).parents('tr').remove();
         });
 
+        $('.datepicker').val('10=05-2012')
+
 
         function deleteItem(index) {
             $('#biodata_' + index).remove();
         }
     </script>
+
+    <script src="{{asset('assets/stisla/js/daterangepicker/daterangepicker.js')}}"></script>
 @endpush

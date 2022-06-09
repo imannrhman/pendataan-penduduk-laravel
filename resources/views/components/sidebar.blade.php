@@ -10,7 +10,7 @@
 
         <ul class="sidebar-menu">
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
 
             <li class="nav-item dropdown">
@@ -30,6 +30,14 @@
 
             <li class="nav-item">
                 <a href="{{route('dashboard')}}" class="nav-link"><i class="fas fa-user-group"></i> <span>Manage RW</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{route('dashboard')}}" class="nav-link"><i class="far fa-newspaper"></i> <span>Manage Berita</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{route('dashboard')}}" class="nav-link"><i class="fas fa-display"></i> <span>Manage Layanan</span></a>
             </li>
         </ul>
     </aside>

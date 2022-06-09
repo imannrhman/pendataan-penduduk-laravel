@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\Admin\RTController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,9 +27,7 @@ Route::get('/visi', function () {
     return view('public.visi');
 })->name('visi');
 
-Route::get('/data_kk', function () {
-    return view('public.data_kk');
-})->name('data_kk');
+Route::get('/data_kk', [RTController::class, 'publicRT'])->name('data_kk');
 
 Route::get('/data_wrg', function () {
     return view('public.data_wrg');
