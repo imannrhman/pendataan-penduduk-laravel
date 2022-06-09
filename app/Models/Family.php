@@ -21,6 +21,11 @@ class Family extends Model
     }
 
 
+    public function rt()
+    {
+        return $this->belongsTo(RT::class, "rt_id", "id");
+    }
+
     use HasFactory;
 
 }

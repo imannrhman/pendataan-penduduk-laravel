@@ -46,8 +46,9 @@
                                 <th>No Kartu Keluarga</th>
                                 <th>Kepala Keluarga</th>
                                 <th>Alamat</th>
+                                <th>Action</th>
                             </tr>
-                            @php ($i = 1)
+                            @php($i = 1)
                             @foreach($families as $family)
                                 <tr>
                                     <td>{{ $i }}</td>
@@ -60,8 +61,13 @@
                                     <td>
                                         {{ $family->address }}
                                     </td>
+                                    <td>
+                                        <a href="{{ route('keluarga.show', \Illuminate\Support\Facades\Crypt::encrypt($family->id, true)) }}" class="btn btn-icon btn-info"><i class="fas fa-eye"></i></a>
+                                        <a href="#" class="btn btn-icon btn-warning"><i class="far fa-edit"></i></a>
+                                        <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-trash-can"></i></a>
+                                    </td>
                                 </tr>
-                                @php ($i =+ 1)
+                                @php($i++)
                             @endforeach
                         </table>
                     </div>

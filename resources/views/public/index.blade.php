@@ -75,7 +75,7 @@
         <!-- hero section -->
         <section id="hero">
             <div class="text-center">
-                <h3 class="m-0">Layanan Online RW 13 </h3> 
+                <h3 class="m-0">Layanan Online RW 13 </h3>
                 <p>Desa Cibiru Wetan Kecataman Cileunyi Kabupaten Bandung</p>
             </div>
             <div class="container-xl">
@@ -96,7 +96,7 @@
                             <a href="{{ route('info_brt') }}">
                                 <div class="rounded thumb">
                                     <div class="inner data-bg-image"
-                                        data-bg-image="https://scontent.fcgk8-1.fna.fbcdn.net/v/t39.30808-6/277586343_645331553560004_8058699531532527896_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=IMpW78QnTJQAX-MvwYk&_nc_zt=23&_nc_ht=scontent.fcgk8-1.fna&oh=00_AT8lauc5xu7Xm6GcBn2SyFiLvdahUXjQoQwsbaBGPmC-FQ&oe=62A0155E">
+                                        data-bg-image="https://scontent.fcgk8-1.fna.fbcdn.net/v/t39.30808-6/277586343_645331553560004_8058699531532527896_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=EVGxmVbay6EAX9NTXlS&_nc_zt=23&_nc_ht=scontent.fcgk8-1.fna&oh=00_AT-PMhnI9F3G5KqrUO62lXD0tgw27wxDC7aeFfwWTfRQUA&oe=62A6041E">
                                     </div>
                                 </div>
                             </a>
@@ -122,7 +122,7 @@
                         <div >
                             <img src="{{ asset('assets/katen/images/wave.svg') }}" class="wave" alt="wave" />
                         </div>
-                          
+
                         </div>
 
                         <div class="rounded padding-30 bordered">
@@ -229,7 +229,7 @@
                         <div class="ads-horizontal text-md-center">
                             <span class="ads-title">- Sponsored Ad -</span>
                             <a href="#">
-                                <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }} alt="Advertisement" />
+                                <img src="{{ asset('assets/katen/images/posts/tabs-1.jpg') }}" alt="Advertisement"/>
                             </a>
                         </div>
 
@@ -296,7 +296,7 @@
                             <!-- post -->
                             <div class="post post-over-content col-md-6">
                                 <div class="clearfix details">
-                                    <a href="category.html" class="category-badge">Agenda RT</a> 
+                                    <a href="category.html" class="category-badge">Agenda RT</a>
                                 </div>
                                 <a href="{{ route('info_brt') }}">
                                     <div class="rounded thumb">
@@ -403,11 +403,11 @@
                                                         <textarea name="InputComment" id="InputComment" class="form-control" rows="4" placeholder="Your comment here..." required="required"></textarea>
                                                     </div>
                                                 </div>
-                                        
+
                                             </div>
-                    
+
                                             <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Submit</button><!-- Submit Button -->
-                    
+
                                         </form>
                                     </div>
                                 </div>
@@ -565,14 +565,14 @@
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <style>
                         .mapouter {
-                            position: relative;  
+                            position: relative;
                         }
                     </style>
                     <style>
                         .gmap_canvas {
                             overflow: hidden;
                             background: none !important;
-                           
+
                         }
                     </style>
                 </div>
@@ -678,7 +678,7 @@
                 </li>
             </ul>
         </nav>
-       
+
         <!-- social icons -->
         <ul class="mt-auto mb-0 social-icons list-unstyled list-inline w-100">
             <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>

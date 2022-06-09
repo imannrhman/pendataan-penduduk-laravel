@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreRTRequest;
 use App\Models\Civilian;
+use App\Models\Family;
 use App\Models\RT;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -111,5 +112,13 @@ class RTController extends Controller
         $response["success"] = true;
         $response["message"] = "Berhasil menghapus data";
         return response()->json($response, 201);
+    }
+
+
+    public function publicRT() {
+        $list_rt = RT::get();
+        $men = Family::whereHas('familyMember', function ($query) { $query->where('gender', 'L');})->get();
+        $women = Family::whereHas('familyMember', function ($query) { $query->where('gender', 'P');})->get();
+        return view('public.data_kk', [ 'list_rt' => $list_rt, 'men' => $men, 'women' => $women ]);
     }
 }

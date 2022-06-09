@@ -14,6 +14,7 @@ use App\Models\Religion;
 use App\Models\RT;
 use App\Models\RW;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class FamilyController extends Controller
 {
@@ -107,9 +108,10 @@ class FamilyController extends Controller
      * @param \App\Models\Family $family
      * @return \Illuminate\Http\Response
      */
-    public function show(Family $family)
+    public function show(string $id)
     {
-        //
+        $family = Family::findOrFail(Crypt::decrypt($id));
+        return view('admin.family.show', [ 'family' => $family]);
     }
 
     /**
@@ -146,12 +148,14 @@ class FamilyController extends Controller
         //
     }
 
-    public function import() {
+    public function import()
+    {
         $list_rt = RT::get();
-        return view('admin.family.import', ['list_rt' => $list_rt]);
+        return view('admin.family.create');
     }
 
-    public function fileImport() {
+    public function fileImport()
+    {
 
     }
 }
